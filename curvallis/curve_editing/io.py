@@ -35,6 +35,7 @@ a file, generate, or provide predefined points.  Can write to file(s).
 _INFINITY = float ('inf')
 _NEG_INFINITY = float('-inf')
 _NO_DECIMATE = 0
+_POINT_FILE_HEADER_LINE = '#rho                  Data'
 
 # Command line arguments =======================================================
 
