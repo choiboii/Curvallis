@@ -35,7 +35,6 @@ a file, generate, or provide predefined points.  Can write to file(s).
 _INFINITY = float ('inf')
 _NEG_INFINITY = float('-inf')
 _NO_DECIMATE = 0
-_POINT_FILE_HEADER_LINE = '#rho                  Data'
 
 # Command line arguments =======================================================
 
@@ -1006,7 +1005,6 @@ def write_point_file(file_name, points):
     print('Writing points to %s' % file_name)
     try:
         with open(file_name, 'w') as out_file:
-            out_file.write (_POINT_FILE_HEADER_LINE + '\n')
             for point in points:
                 x = point[0]
                 y = point[1]
